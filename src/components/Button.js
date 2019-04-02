@@ -7,9 +7,10 @@ class Button extends React.Component {
 
   render() {
     console.log(this.context);
+    const buttonText = this.context === 'english' ? 'Submit' : 'Voorleggen';
     return (
       <button className="ui button primary">
-        Submit
+        {buttonText}
       </button>
     );
   }
